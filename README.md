@@ -1,4 +1,4 @@
-# BeyondChats
+# Lazy Idli Assignment
 
 This Frontend Development Internship Assignment is an assignment given by Lazy Idli Private Limited for evaluating the works of aspiring Frontend Developers in their company.
 
