@@ -1,0 +1,78 @@
+.addScore {
+  padding: 3rem 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  color: var(--color-grey-light-0);
+}
+
+.formRow {
+  padding: 0 1.5rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  column-gap: 0rem;
+
+  & label {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--color-grey-light-0);
+    /* background-color: #000; */
+  }
+}
+
+.input {
+  border: none;
+  border-radius: 3rem;
+  padding: 0.8rem 2rem;
+  background-color: var(--color-grey-light-2);
+
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--color-grey-dark-2);
+}
+
+.input:focus {
+  outline: none;
+}
+
+.btnRow {
+  margin-top: 1rem;
+  padding: 0 1.5rem;
+  align-self: flex-start;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.8rem 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 3rem;
+}
+
+.btnPrimary {
+  background-color: var(--color-accent-light);
+  color: var(--color-grey-dark-2);
+}
+
+.btnSecondary {
+  background-color: var(--color-grey-light-1);
+}
+
+.errorMessage {
+  padding: 0.3rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  /* text-align: center; */
+  color: #f00;
+  background-color: #ffcccc;
+  border-radius: 4rem;
+}

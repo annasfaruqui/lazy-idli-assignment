@@ -1,0 +1,83 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+
+  transition: all 0.5s;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-height: 25rem;
+  width: 50vw;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("../../assets/secondary-image.png");
+  background-position: center;
+  background-size: cover;
+
+  /* background-color: var(--color-grey-light-1); */
+  border-radius: 1rem;
+  box-shadow: 4px 8px 2rem rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+
+  transition: all 0.5s;
+}
+
+.popupHeading {
+  background-color: #373737;
+
+  color: var(--color-grey-light-1);
+  padding: 1rem 2rem;
+  position: relative;
+
+  & h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+
+  padding: 0.5rem;
+  background-color: transparent;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.1s;
+
+  & svg {
+    width: 2.2rem;
+    height: 2.2rem;
+    color: var(--color-grey-light-1);
+  }
+}
+
+.closeButton:hover {
+  background-color: var(--color-grey-dark-1);
+
+  & svg {
+    color: var(--color-grey-light-0);
+  }
+}
+
+.popupMain {
+  padding: 1rem 2rem;
+}

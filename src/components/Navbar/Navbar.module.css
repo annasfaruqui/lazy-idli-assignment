@@ -1,0 +1,29 @@
+.nav {
+  padding: 0.5rem 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--color-grey-dark-2);
+  color: var(--color-grey-light-1);
+}
+
+.addScoreBtn {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  color: var(--color-grey-dark-2);
+}
+
+@media (max-width: 50em) {
+  .nav {
+    padding: 0.5rem 2rem;
+  }
+}
+
+@media (max-width: 38em) {
+  .nav {
+    padding: 0.5rem 2rem;
+  }
+}

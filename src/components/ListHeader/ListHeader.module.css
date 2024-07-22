@@ -1,0 +1,35 @@
+.header {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem 3rem;
+  padding-left: 1.2rem;
+
+  border-radius: 1rem;
+
+  display: grid;
+  grid-template-columns: 10rem 1fr 12rem;
+  align-items: center;
+  justify-items: start;
+
+  & p {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--color-golden-brown);
+    font-size: 2rem;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  & svg {
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-golden-brown);
+  }
+}
+
+@media (max-width: 38em) {
+  .header {
+    grid-template-columns: 6rem 1fr 12rem;
+  }
+}

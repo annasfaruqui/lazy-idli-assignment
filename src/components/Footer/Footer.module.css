@@ -1,0 +1,50 @@
+.footer {
+  background-color: var(--color-grey-dark-2);
+  padding-top: 1rem;
+
+  color: var(--color-grey-light-1);
+  overflow: hidden;
+
+  & div {
+    width: max-content;
+    padding-left: 100%;
+    animation: marquee 20s linear infinite;
+
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.socialLinks {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 6px;
+}
+
+.icon:link,
+.icon:visited {
+  svg {
+    width: 2rem;
+    height: 2rem;
+    color: var(--color-grey-light-1);
+  }
+}
+
+.icon:hover,
+.icon:active {
+  svg {
+    color: var(--color-grey-dark-3);
+  }
+}
