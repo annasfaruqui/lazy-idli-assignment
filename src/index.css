@@ -80,3 +80,9 @@ input {
     font-size: 56.25%;
   }
 }
+
+@media (max-width: 27em) {
+  html {
+    font-size: 45%;
+  }
+}
