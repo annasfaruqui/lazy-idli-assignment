@@ -59,9 +59,9 @@ input {
 }
 
 .app {
-  height: 100vh;
+  height: 100svh;
   display: grid;
-  grid-template-rows: 6.5rem calc(100vh - 11.5rem) 5rem;
+  grid-template-rows: 6.5rem calc(100svh - 11.5rem) 5rem;
 
   background-image: linear-gradient(
       to bottom,
