@@ -1,6 +1,6 @@
+import logo from "../../assets/logo.svg";
 import Popup from "../Popup/Popup";
 import AddScore from "../AddScore/AddScore";
-import logo from "../../assets/logo.svg";
 import styles from "./Navbar.module.css";
 
 function Navbar() {

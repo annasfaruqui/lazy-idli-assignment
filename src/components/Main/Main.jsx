@@ -1,12 +1,12 @@
 import Header from "../Header/Header";
-import List from "../List/List";
+import ListSection from "../ListSection/ListSection";
 import styles from "./Main.module.css";
 
 function Main() {
   return (
     <main className={styles.main}>
       <Header />
-      <List />
+      <ListSection />
     </main>
   );
 }

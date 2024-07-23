@@ -1,9 +1,8 @@
 import { cloneElement, createContext, useContext, useState } from "react";
 import { createPortal } from "react-dom";
 import { FaXmark } from "react-icons/fa6";
-import styles from "./Popup.module.css";
-
 import { useOutsideClick } from "../../hooks/useOutsideClick";
+import styles from "./Popup.module.css";
 
 const PopupContext = createContext();
 

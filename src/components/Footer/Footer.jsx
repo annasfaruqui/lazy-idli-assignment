@@ -1,26 +1,5 @@
-import { FaGithub, FaGlobe, FaLinkedin } from "react-icons/fa6";
+import { socialLinks } from "../../data/social_links-data";
 import styles from "./Footer.module.css";
-
-const socialLinks = [
-  {
-    id: 1,
-    name: "LinkedIn",
-    icon: FaLinkedin,
-    linkTo: "https://www.linkedin.com/in/annasfaruqui",
-  },
-  {
-    id: 2,
-    name: "Portfolio",
-    icon: FaGlobe,
-    linkTo: "https://annasfaruqui.netlify.app",
-  },
-  {
-    id: 3,
-    name: "GitHub",
-    icon: FaGithub,
-    linkTo: "https://github.com/annasfaruqui",
-  },
-];
 
 function Footer() {
   return (

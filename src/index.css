@@ -18,6 +18,7 @@
   --color-accent-light: #4dff4d;
   --color-accent: #00ff00;
   --color-accent-dark: #008000;
+  --color-accent-opacity: rgba(0, 255, 0, 0.162);
 
   --breakpoint-xl: 86em; /* 1376px */
   --breakpoint-lg: 72em; /* 1152px */

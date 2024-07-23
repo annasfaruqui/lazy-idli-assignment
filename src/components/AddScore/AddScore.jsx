@@ -1,7 +1,7 @@
 import { useState } from "react";
-import styles from "./AddScore.module.css";
 import { useDispatch } from "react-redux";
 import { addUser } from "../../userSlice";
+import styles from "./AddScore.module.css";
 
 function AddScore({ onClosePopup }) {
   const [name, setName] = useState("");
@@ -9,15 +9,17 @@ function AddScore({ onClosePopup }) {
   const [error, setError] = useState("");
   const dispatch = useDispatch();
 
+  let user = {};
+
   function handleSubmit(e) {
     e.preventDefault();
 
     const pattern = /^[0-5][0-9]:[0-5][0-9]:[0-9]{3}$/;
 
-    if (!name || !score) return setError("Please enter name and score");
+    if (!name || !score) return setError("Please enter BOTH name and score");
     if (!pattern.test(score)) return setError("Score pattern NOT matching");
 
-    const user = {
+    user = {
       id: Date.now(),
       name,
       score,
@@ -42,7 +44,7 @@ function AddScore({ onClosePopup }) {
     <form className={styles.addScore} onSubmit={handleSubmit}>
       {/* NAME */}
       <div className={styles.formRow}>
-        <label for="name">Player's Name:</label>
+        <label htmlFor="name">Player's Name:</label>
         <input
           type="text"
           id="name"
@@ -56,7 +58,7 @@ function AddScore({ onClosePopup }) {
 
       {/* SCORE */}
       <div className={styles.formRow}>
-        <label for="score">Score:</label>
+        <label htmlFor="score">Score:</label>
         <input
           type="text"
           id="score"
