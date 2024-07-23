@@ -81,3 +81,9 @@
 .popupMain {
   padding: 1rem 2rem;
 }
+
+@media (max-width: 72em) {
+  .popup {
+    width: 80vw;
+  }
+}

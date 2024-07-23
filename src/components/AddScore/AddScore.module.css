@@ -71,8 +71,35 @@
   padding: 0.3rem 1rem;
   font-size: 1.2rem;
   font-weight: 600;
-  /* text-align: center; */
   color: #f00;
   background-color: #ffcccc;
   border-radius: 4rem;
+}
+
+.nbsp {
+  display: block;
+}
+
+@media (max-width: 50em) {
+  .formRow {
+    padding: 0;
+    grid-template-columns: 1fr;
+
+    & label {
+      display: none;
+    }
+  }
+
+  .btnRow {
+    margin-top: 1rem;
+    padding: 0;
+  }
+
+  .errorMessage {
+    padding: 0.3rem 1rem;
+  }
+
+  .nbsp {
+    display: none;
+  }
 }

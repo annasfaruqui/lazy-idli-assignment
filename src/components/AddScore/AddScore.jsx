@@ -64,14 +64,14 @@ function AddScore({ onClosePopup }) {
           pattern="^[0-5][0-9]:[0-5][0-9]:[0-9]{3}$"
           value={score}
           onChange={(e) => setScore(e.target.value)}
-          placeholder="Enter player's time (mm:ss:mss)"
+          placeholder="Enter score (mm:ss:mss)"
           required
         />
       </div>
 
       {error && (
         <div className={styles.formRow}>
-          <p>&nbsp;</p>
+          <p className={styles.nbsp}>&nbsp;</p>
           <p className={styles.errorMessage}>{error}</p>
         </div>
       )}
