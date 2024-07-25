@@ -1,5 +1,5 @@
 .main {
   display: grid;
-  grid-template-rows: 7.5rem calc(100% - 51.5rem) 40rem;
+  grid-template-rows: 7.5rem calc(100% - 46.5rem) 35rem;
   gap: 2rem;
 }

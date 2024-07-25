@@ -46,7 +46,7 @@
   font-weight: 500;
   display: grid;
   grid-template-columns: 10rem 1fr 10rem 10rem;
-  grid-template-rows: calc(calc(100svh - 75rem) / 10);
+  grid-template-rows: calc((100svh - 75rem) / 10);
   align-items: center;
 
   transition: all 0.2s;
