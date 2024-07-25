@@ -1,14 +1,17 @@
 .section {
-  background-color: yellowgreen;
-
   display: flex;
   overflow-x: auto;
-  /* padding-bottom: 10rem; */
 
-  /* z-index: 99; */
+  z-index: 10;
+}
+
+.section::-webkit-scrollbar {
+  display: none;
 }
 
 .galleryImg {
+  padding-top: auto;
+  height: 100%;
   width: 100vw;
   object-fit: cover;
 

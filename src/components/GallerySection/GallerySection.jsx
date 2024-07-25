@@ -11,13 +11,13 @@ function GallerySection() {
         <img src={img1} alt="img-1" />
       </figure>
       <figure className={styles.galleryImg}>
-        <img src={img3} alt="img-3" />
+        <img src={img2} alt="img-1" />
       </figure>
       <figure className={styles.galleryImg}>
-        <img src={img2} alt="img-2" />
+        <img src={img3} alt="img-1" />
       </figure>
       <figure className={styles.galleryImg}>
-        <img src={img4} alt="img-4" />
+        <img src={img4} alt="img-1" />
       </figure>
     </section>
   );

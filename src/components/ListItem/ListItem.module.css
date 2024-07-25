@@ -1,7 +1,5 @@
 .li {
   display: flex;
-  /* height: calc((100svh - 64rem) / 10); */
-  height: 10%;
 
   transform: translateX(100%);
   opacity: 0;
@@ -48,8 +46,7 @@
   font-weight: 500;
   display: grid;
   grid-template-columns: 10rem 1fr 10rem 10rem;
-  grid-template-rows: 4rem;
-  /* grid-template-rows: 20vh; */
+  grid-template-rows: calc(calc(100svh - 75rem) / 10);
   align-items: center;
 
   transition: all 0.2s;

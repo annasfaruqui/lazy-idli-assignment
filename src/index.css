@@ -84,6 +84,6 @@ input {
 
 @media (max-width: 27em) {
   html {
-    /* font-size: 45%; */
+    font-size: 45%;
   }
 }

@@ -1,17 +1,13 @@
 .listSection {
-  background-color: blueviolet;
-  /* height: 100%; */
-  /* margin-top: 2rem; */
-  /* margin-bottom: 3rem; */
-
-  height: calc(100svh - 63rem);
+  height: calc(100svh - 51.5rem);
 
   max-width: 100rem;
   width: 100%;
   margin: 0 auto;
   padding: 0 10rem;
+
   display: grid;
-  grid-template-rows: 5rem calc(100svh - 68rem);
+  grid-template-rows: 5rem calc(100svh - 64rem);
 }
 
 @media (max-width: 50em) {

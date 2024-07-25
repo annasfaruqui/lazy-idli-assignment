@@ -1,6 +1,5 @@
 .main {
   display: grid;
-  grid-template-rows: 7.5rem calc(100% - 47.5rem) 40rem;
-
-  background-color: brown;
+  grid-template-rows: 7.5rem calc(100% - 51.5rem) 40rem;
+  gap: 2rem;
 }
