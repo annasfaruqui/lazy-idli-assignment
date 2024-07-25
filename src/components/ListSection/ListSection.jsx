@@ -4,7 +4,7 @@ import styles from "./ListSection.module.css";
 
 function ListSection() {
   return (
-    <section id="list-section" className={styles.section}>
+    <section id="list-section" className={styles.listSection}>
       <ListHeader />
       <List />
     </section>

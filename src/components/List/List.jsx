@@ -8,7 +8,10 @@ function List() {
   const list = useSelector(getUsers);
 
   function parseTime(time) {
-    const [mm, ss, mss] = time.split(":").map((el) => Number(el));
+    const [mm, seconds] = time.split(":").map((el) => Number(el));
+    const [ss, mss] = String(seconds)
+      .split(".")
+      .map((el) => Number(el));
     return new Date(mm * 60 * 1000 + ss * 1000 + mss);
   }
 

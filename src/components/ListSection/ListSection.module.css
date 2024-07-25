@@ -1,20 +1,27 @@
-.section {
-  height: 81.5%;
+.listSection {
+  background-color: blueviolet;
+  /* height: 100%; */
+  /* margin-top: 2rem; */
+  /* margin-bottom: 3rem; */
+
+  height: calc(100svh - 63rem);
+
   max-width: 100rem;
+  width: 100%;
   margin: 0 auto;
   padding: 0 10rem;
   display: grid;
-  grid-template-rows: max-content 1fr;
+  grid-template-rows: 5rem calc(100svh - 68rem);
 }
 
 @media (max-width: 50em) {
-  .section {
+  .listSection {
     padding: 0 5rem;
   }
 }
 
 @media (max-width: 38em) {
-  .section {
+  .listSection {
     padding: 0 2rem;
   }
 }

@@ -1,6 +1,9 @@
 .list {
+  background-color: orange;
+  /* max-height: calc(100svh - 64rem); */
+
   padding: 0.65rem 0 1rem;
-  height: 100%;
+
   list-style: none;
   display: flex;
   flex-direction: column;

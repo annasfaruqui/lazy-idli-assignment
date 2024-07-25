@@ -1,0 +1,18 @@
+.section {
+  background-color: yellowgreen;
+
+  display: flex;
+  overflow-x: auto;
+  /* padding-bottom: 10rem; */
+
+  /* z-index: 99; */
+}
+
+.galleryImg {
+  width: 100vw;
+  object-fit: cover;
+
+  & img {
+    height: 100%;
+  }
+}

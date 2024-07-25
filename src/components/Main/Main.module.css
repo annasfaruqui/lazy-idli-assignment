@@ -1,0 +1,6 @@
+.main {
+  display: grid;
+  grid-template-rows: 7.5rem calc(100% - 47.5rem) 40rem;
+
+  background-color: brown;
+}
