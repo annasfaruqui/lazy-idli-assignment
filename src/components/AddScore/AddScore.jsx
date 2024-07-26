@@ -14,7 +14,7 @@ function AddScore({ onClosePopup }) {
   function handleSubmit(e) {
     e.preventDefault();
 
-    const pattern = /^[0-5][0-9]:[0-5][0-9]:[0-9]{3}$/;
+    const pattern = /^(?:[0-5][0-9]):(?:[0-5][0-9])\.(?:[0-9]{3})$/;
 
     if (!name || !score) return setError("Please enter BOTH name and score");
     if (!pattern.test(score)) return setError("Score pattern NOT matching");
@@ -63,10 +63,10 @@ function AddScore({ onClosePopup }) {
           type="text"
           id="score"
           className={styles.input}
-          pattern="^[0-5][0-9]:[0-5][0-9]:[0-9]{3}$"
+          pattern="/^(?:[0-5][0-9]):(?:[0-5][0-9])\.(?:[0-9]{3})$/"
           value={score}
           onChange={(e) => setScore(e.target.value)}
-          placeholder="Enter score (mm:ss:mss)"
+          placeholder="Enter score (mm:ss.mss)"
           required
         />
       </div>
